@@ -35,7 +35,7 @@ Ensure you have the necessary API keys and tokens for CapSolver and Telegram.
 
 - Install the required Python packages:
     ```bash
-    pip install requirements.txt
+    pip install -r requirements.txt
     ```
 
 - Set your CapSolver API key, Telegram Bot Token, and Telegram Chat ID in the script
