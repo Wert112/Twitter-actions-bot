@@ -35,10 +35,10 @@ async def change_username(account, proxy, sleep_duration, used_usernames):
 
 async def main():
     if len(list_of_new_usernames) == 0:
-        print(Fore.RED + 'Пожалуйста добавьте новые имена пользователей в список в config файле')
+        print(Fore.RED + 'Please add names you want to use for changing in confing.py')
 
     if len(list_of_new_usernames) < len(accounts_data):
-        print(Fore.RED +f"Недостаточно юзернеймов для всех {len(accounts_data)} аккаунтов. Количество юзернеймов: {len(list_of_new_usernames)}. Пожалуйста, добавьте ещё юзернеймов.")
+        print(Fore.RED +f"Not enough new usernames for all {len(accounts_data)} accounts. The number of usernames: {len(list_of_new_usernames)}. Please,add more usernames.")
 
     if len(list_of_new_usernames) >= len(accounts_data):
         tasks = []
