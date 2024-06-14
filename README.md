@@ -65,7 +65,7 @@ http://proxy2:port:login:password
 
 If you have more accounts than proxies, the proxies will be reused for the remaining accounts.
 
-## comments.txt
+### comments.txt
 This file should contain a list of comments in the following format:
 
 ```
@@ -75,7 +75,7 @@ This file should contain a list of comments in the following format:
 ]
 ```
 
-### Configuration to **config.py**
+### **config.py** configuration
 
 **CapSolver API Key**: Used for various automated tasks
 ```
