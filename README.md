@@ -19,11 +19,13 @@ Welcome to the Twitter Bot! This bot allows you to perform various actions with 
 
 ## Prerequisites
 
-- Python 3.7 or higher
+- Python 3.11 or higher
 - Required Python packages:
   - asyncio
   - colorama
   - tweepy-self
+  - python-telegram-bot
+  - aiohttp
 
 Ensure you have the necessary API keys and tokens for CapSolver and Telegram.
 
@@ -40,7 +42,40 @@ Ensure you have the necessary API keys and tokens for CapSolver and Telegram.
 
 ## Configuration
 
-Configuration from **config.py**
+### accounts.txt
+This file should contain your accounts in the following format:
+
+```
+username:password:email:auth_token
+```
+or just
+```
+auth_token
+```
+
+Each account should be on a new line. You can provide either the username, password, email, and auth_token separated by colons, or just the auth_token.
+
+### proxy.txt
+This file should contain your proxies, with each proxy on a new line:
+
+```
+http://proxy1:port:login:password
+http://proxy2:port:login:password
+```
+
+If you have more accounts than proxies, the proxies will be reused for the remaining accounts.
+
+## comments.txt
+This file should contain a list of comments in the following format:
+
+```
+[
+    "GM", "GN!", "Hello", "DYOR", "Bye", "Good code",
+    "Awesome tweet", "NGMI"
+]
+```
+
+### Configuration to **config.py**
 
 - **CapSolver API Key**: Used for various automated tasks
   ```python
