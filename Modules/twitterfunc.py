@@ -23,18 +23,6 @@ with open(comments_path, 'r') as file:
 
 #####################################################
 
-async def change_ip():
-    ip_change_urls = [
-        "http://node-de-48.astroproxy.com:10413/api/changeIP?apiToken=d736ce449b58d955"
-    ]
-    chosen_url = random.choice(ip_change_urls)
-    async with aiohttp.ClientSession() as session:
-        async with session.get(chosen_url) as response:
-            if response.status == 200:
-                pass
-
-#####################################################
-
 async def like(account, url, proxy, sleep_duration):
     async with twitter.Client(account, proxy=proxy, verify=False, capsolver_api_key=CAPSOLVER_API_KEY) as twitter_client:
         tweet_id = re.search(r'/status/(\d+)', url).group(1)
