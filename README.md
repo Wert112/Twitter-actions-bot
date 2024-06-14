@@ -77,7 +77,7 @@ This file should contain a list of comments in the following format:
 
 ## **config.py** configuration
 
-**CapSolver API Key**: Used for various automated tasks
+**CapSolver API Key**: Needed to solve captcha on twitter automatically
 ```
 CAPSOLVER_API_KEY = 'your_capsolver_api_key'
 ```
