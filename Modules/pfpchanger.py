@@ -28,7 +28,7 @@ async def main():
         print(Fore.RED + ("No Images in Images Folder"))
 
     if len(image_files) < len(accounts_data):
-        print(Fore.RED +f"Not enough images for  {len(accounts_data)} accounts. The number of images: {len(image_files)}. Please add more images.")
+        print(Fore.RED +f"Not enough images for {len(accounts_data)} accounts. The number of images: {len(image_files)}. Please add more images.")
 
     if len(image_files) >= len(accounts_data):
         tasks = []
