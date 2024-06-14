@@ -37,7 +37,7 @@ async def main():
     results = await asyncio.gather(*tasks)
     valid_accounts_count = sum(results)
     print('')
-    print(Fore.GREEN + f'Количество валидных аккаунтов: {valid_accounts_count}')
+    print(Fore.GREEN + f'The number of vaild accounts: {valid_accounts_count}')
 
 
 if __name__ == "__main__":
