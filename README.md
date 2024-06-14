@@ -40,40 +40,45 @@ Ensure you have the necessary API keys and tokens for CapSolver and Telegram.
 
 ## Configuration
 
+Configuration from **config.py**
+
 - **CapSolver API Key**: Used for various automated tasks
   ```python
   CAPSOLVER_API_KEY = 'your_capsolver_api_key'
 
 
 **Telegram Bot Toke**: Needed to interact with the Telegram API
-
+```python
 TELEGRAM_BOT_TOKEN = 'your_telegram_bot_token'
 
 **Telegram Chat ID**: The ID of the Telegram chat where the bot will send messages
+```python
 TELEGRAM_CHAT_ID = 'your_telegram_chat_id'
 
 **Number of Likes/Retweets/Replies/Quotes**: Configure how many likes, retweets, replies, and quotes the bot should perform. Setting a value to 0 means the action will not be performed
 
-
-NUM_LIKES = 1
-NUM_RETWEETS = 1
-NUM_REPLIES = 0
+```python
+NUM_LIKES = 10
+NUM_RETWEETS = 5
+NUM_REPLIES = 3
 NUM_QUOTES = 0
 
 **Delay Between Actions**: Set the minimum and maximum delay between bot actions in seconds
 
+```python
 MIN_DELAY = 10
-MAX_DELAY = 30
+MAX_DELAY = 20
 
 **Accounts to Follow**: List of accounts the bot should follow
 
+```python
 list_of_accounts_to_follow = [
     'ElonMusk', 'ElonMusk2',
 ]
 
 **New Usernames**: List of new usernames for the namechanger module
 
-
+```python
 list_of_new_usernames = [
     'New_username1', 'New_username2'
 ]
@@ -82,7 +87,8 @@ list_of_new_usernames = [
 
 **Run the script**:
 
-```python main.py```
+```python
+main.py
 
 ## Actions
 
