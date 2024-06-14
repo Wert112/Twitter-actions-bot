@@ -1,0 +1,4 @@
+[
+    "GM", "GN!", "Hello", "DYOR", "Bye", "Good code",
+    "Awesome tweet", "NGMI"
+]
