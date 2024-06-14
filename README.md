@@ -3,10 +3,13 @@
 Welcome to the Twitter Bot! This bot allows you to perform various actions with your Twitter accounts, including transferring tweets from Telegram to Twitter, checking account statuses, following accounts, changing usernames, and updating profile pictures.
 
 ## Table of Contents
-
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Configuration](#configuration)
+  - [accounts.txt](#accountstxt)
+  - [proxy.txt](#proxytxt)
+  - [comments.txt](#commentstxt)
+  - [config.py](#configpy-configuration)
 - [Usage](#usage)
 - [Actions](#actions)
   - [Tg to Twitter](#tg-to-twitter)
