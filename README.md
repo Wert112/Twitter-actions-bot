@@ -82,7 +82,7 @@ list_of_new_usernames = [
 
 **Run the script**:
 
-python main.py
+```python main.py```
 
 ## Actions
 
