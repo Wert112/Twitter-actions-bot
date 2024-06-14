@@ -25,10 +25,10 @@ async def update_pfp(account, proxy, image_path):
 async def main():
 
     if not image_files:
-        print(Fore.RED + ("В папке Images нет изображений"))
+        print(Fore.RED + ("No Images in Images Folder"))
 
     if len(image_files) < len(accounts_data):
-        print(Fore.RED +f"Недостаточно изображений для всех {len(accounts_data)} аккаунтов. Количество изображений: {len(image_files)}. Пожалуйста, добавьте ещё изображения.")
+        print(Fore.RED +f"Not enough images for  {len(accounts_data)} accounts. The number of images: {len(image_files)}. Please add more images.")
 
     if len(image_files) >= len(accounts_data):
         tasks = []
