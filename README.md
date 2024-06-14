@@ -22,7 +22,7 @@ Welcome to the Twitter Bot! This bot allows you to perform various actions with 
 
 ## Prerequisites
 
-- Python 3.11 or higher
+- Python 3.11 or higher (tested on  3.12.1)
 - Required Python packages:
   - asyncio
   - colorama
