@@ -42,7 +42,7 @@ Ensure you have the necessary API keys and tokens for CapSolver and Telegram.
 
 ## Configuration
 
-### accounts.txt
+## accounts.txt
 This file should contain your accounts in the following format:
 
 ```
@@ -55,7 +55,7 @@ auth_token
 
 Each account should be on a new line. You can provide either the username, password, email, and auth_token separated by colons, or just the auth_token.
 
-### proxy.txt
+## proxy.txt
 This file should contain your proxies, with each proxy on a new line:
 
 ```
@@ -65,7 +65,7 @@ http://proxy2:port:login:password
 
 If you have more accounts than proxies, the proxies will be reused for the remaining accounts.
 
-### comments.txt
+## comments.txt
 This file should contain a list of comments in the following format:
 
 ```
@@ -75,7 +75,7 @@ This file should contain a list of comments in the following format:
 ]
 ```
 
-### **config.py** configuration
+## **config.py** configuration
 
 **CapSolver API Key**: Used for various automated tasks
 ```
@@ -126,19 +126,19 @@ main.py
 
 ## Actions
 
-**Tg to Twitter**
+**Tg to Twitter**:
 Transfers tweets from Telegram to Twitter. Requires you to send the Twitter link to the Telegram bot.
 
-**Accounts Checker**
+**Accounts Checker**:
 Checks the status of Twitter accounts.
 
-**Follow**
+**Follow**:
 Follows the accounts listed in list_of_accounts_to_follow.
 
-**Namechanger**
+**Namechanger**:
 Changes the username of your Twitter account to one of the names listed in list_of_new_usernames.
 
-**Pfpchanger**
+**Pfpchanger**:
 Changes the profile picture of your Twitter account to one of the puctures from **Images** folder. 
 
 ## Contributing
